@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="center">
+        <div class="container">
+            <h1 class="page-title">HomeStay Organizer Company Login</h1>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h2>For Student Login</h2>
+                    <form action="php/student.php" method="post">
+
+                        <input type="hidden" name="role" value="student">
+
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" name="password" required>
+                        </div>
+
+
+                        <button class="btn" type="submit">Login as a Student</button>
+                        <p>Not a User?</p>
+                        <a href="register.php">Register</a>
+                    </form>
+                </div>
+
+                    <div class="card">
+                        <h2>For Owner Login</h2>
+                        <form action="php/owner.php" method="post">
+                            <input type="hidden" name="role" value="owner">
+
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" name="password" required>
+                            </div>
+
+                            <button class="btn" type="submit">Login as an Owner</button>
+                            <p>Not a User?</p>
+                            <a href="register.php">Register</a>
+                        </form>
+                    </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

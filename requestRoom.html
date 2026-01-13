@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Room</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div style="margin-bottom: 45px;">
+            <h1>Find Your Next Room</h1>
+            <p>Choose how you want to search — quick, flexible, or budget-first</p>
+        </div>
+
+        <div class="grid-2">
+
+            <!-- CARD 1: CITY SEARCH -->
+            <div class="card request-card">
+                <h2>🌆 Search by City</h2>
+                <p>Browse available rooms in your preferred city</p>
+
+                <form action="php/requestRoom.php" method="post">
+                    <div class="form-group">
+                        <label>Select City</label>
+                        <div class="select-wrapper">
+                            <select name="cityName" required>
+                                <option value="">-- Choose City --</option>
+                                <option>Vancouver</option>
+                                <option>Surrey</option>
+                                <option>Burnaby</option>
+                                <option>Delta</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="btn">Search Rooms</button>
+                </form>
+            </div>
+
+            <!-- CARD 2: FILTER SEARCH -->
+            <div class="card request-card">
+                <h2>⚙️ Filter by Preferences</h2>
+                <p>Find rooms that match your lifestyle and budget</p>
+
+                <form action="php/requestRoom.php" method="post">
+                    <div class="form-group">
+                        <label>Maximum Rent ($)</label>
+                        <input type="number" name="maxPrice" placeholder="e.g. 900">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Smoking Allowed?</label>
+                        <div class="select-wrapper">
+                            <select name="smoke">
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pets Allowed?</label>
+                        <div class="select-wrapper">
+                            <select name="pets">
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="btn">Apply Filters</button>
+                </form>
+            </div>
+
+            <!-- CARD 3: CHEAPEST ROOM -->
+            <div class="card request-card">
+                <h2>💸 Cheapest Room</h2>
+                <p>Find the most affordable room in a city instantly</p>
+
+                <form action="php/requestRoom.php" method="post">
+                    <div class="form-group">
+
+                        <label>Select City</label>
+                        <div class="select-wrapper">
+                            <select name="cityN" required>
+                                <option value="">-- Choose City --</option>
+                                <option>Vancouver</option>
+                                <option>Surrey</option>
+                                <option>Burnaby</option>
+                                <option>Delta</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="btn">Find Cheapest</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Back -->
+        <div style="margin-top: 40px;">
+            <a href="student_dashboard.php">← Back to Dashboard</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
