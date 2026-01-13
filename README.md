@@ -1,4 +1,5 @@
 A full-stack web application designed to manage student housing efficiently by connecting students and home owners through a centralized platform. The system allows users to handle room requests, contracts, and housing operations in a structured and secure way.
+A live link to the project is: https://student-housing.ct.ws
 HomeStay Organizer Company is a role-based housing management system where:
 
 Students can request rooms, view contracts, and manage their housing status
@@ -66,8 +67,7 @@ Relational schema with foreign keys
 
 Structured entity relationships
 
-Through this project, I gained hands-on experience with:
-
+=>Through this project, I gained hands-on experience with:
 Full-stack web development
 
 PHP session handling and authentication
